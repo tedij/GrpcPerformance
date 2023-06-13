@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+package data;
+
+message TemplateResponse {
+  int32 id = 1;
+  string template_name = 2;
+  string content = 3;
+  string data = 4;
+}
+
+message TemplateRequest {
+  int32 id = 1;
+}
+
+service TemplateService {
+
+  rpc getTemplate(TemplateRequest) returns(TemplateResponse){}
+
+  rpc getTemplates(TemplateRequest) returns(stream TemplateResponse){}
+}

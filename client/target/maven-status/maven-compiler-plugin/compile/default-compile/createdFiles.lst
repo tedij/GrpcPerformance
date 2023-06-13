@@ -1,0 +1,5 @@
+org/example/service/TemplateGrpcService$1.class
+org/example/controller/TemplateController.class
+org/example/service/TemplateRestService.class
+org/example/Application.class
+org/example/service/TemplateGrpcService.class
